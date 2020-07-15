@@ -1,4 +1,4 @@
-# @nuxtjs/dotenv
+# @wilonth/nuxt-dotenv
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -16,13 +16,13 @@ The module loads variables from your .env file directly into your nuxt.js applic
 
 ## Setup
 
-1. Add `@nuxtjs/dotenv` dependency to your project
+1. Add `@wilonth/nuxt-dotenv` dependency to your project
 
 ```bash
-yarn add --dev @nuxtjs/dotenv # or npm install --save-dev @nuxtjs/dotenv
+yarn add --dev @wilonth/nuxt-dotenv # or npm install --save-dev @wilonth/nuxt-dotenv
 ```
 
-2. Add `@nuxtjs/dotenv` to the `buildModules` section of `nuxt.config.js`
+2. Add `@wilonth/nuxt-dotenv` to the `buildModules` section of `nuxt.config.js`
 
 :warning: If you are using a Nuxt version previous than **v2.9** you have to install module as a `dependency` (No `--dev` or `--save-dev` flags) and also use `modules` section in `nuxt.config.js` instead of `buildModules`.
 
@@ -30,10 +30,10 @@ yarn add --dev @nuxtjs/dotenv # or npm install --save-dev @nuxtjs/dotenv
 export default {
   buildModules: [
     // Simple usage
-    '@nuxtjs/dotenv',
+    '@wilonth/nuxt-dotenv',
 
     // With options
-    ['@nuxtjs/dotenv', { /* module options */ }]
+    ['@wilonth/nuxt-dotenv', { /* module options */ }]
   ]
 }
 ```
@@ -43,7 +43,7 @@ export default {
 ```js
 export default {
   buildModules: [
-    '@nuxtjs/dotenv'
+    '@wilonth/nuxt-dotenv'
   ],
   dotenv: {
     /* module options */
@@ -64,7 +64,7 @@ you can pass to the module options an `only` array with the keys you want to all
 ```js
 export default {
   buildModules: [
-    ['@nuxtjs/dotenv', { only: ['some_key'] }]
+    ['@wilonth/nuxt-dotenv', { only: ['some_key'] }]
   ]
 }
 ```
@@ -80,7 +80,7 @@ If you want to change the path of the folder where we can find the `.env` file, 
 ```js
 export default {
   buildModules: [
-    ['@nuxtjs/dotenv', { path: '/path/to/my/global/env/' }]
+    ['@wilonth/nuxt-dotenv', { path: '/path/to/my/global/env/' }]
   ]
 }
 ```
@@ -100,7 +100,7 @@ Setting this to true will allow your system set variables to work.
 ```js
 export default {
   buildModules: [
-    ['@nuxtjs/dotenv', { systemvars: true }]
+    ['@wilonth/nuxt-dotenv', { systemvars: true }]
   ]
 }
 ```
@@ -115,7 +115,7 @@ We can override the filename when we need to use different config files for diff
 ```js
 export default {
   buildModules: [
-    ['@nuxtjs/dotenv', { filename: '.env.prod' }]
+    ['@wilonth/nuxt-dotenv', { filename: '.env.prod' }]
   ]
 }
 ```
