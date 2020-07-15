@@ -1,6 +1,6 @@
 {
   "name": "@wilonth/nuxt-dotenv",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "A Nuxt.js module that loads your .env file into your context options, supports merging multiple .env files (.env, .env.development, .env.development.local...)",
   "repository": "chilons/dotenv-module",
   "license": "MIT",
