@@ -1,6 +1,7 @@
 <template>
   <div>
     foo: {{ foo }}
+    bar: {{ bar }}
   </div>
 </template>
 
@@ -8,7 +9,8 @@
 export default {
   data () {
     return {
-      foo: process.env.foo
+      foo: process.env.foo,
+      bar: process.env.bar
     }
   }
 }

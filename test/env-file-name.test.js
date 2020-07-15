@@ -15,4 +15,9 @@ describe('.env file name', () => {
     const html = await get('/')
     expect(html).toContain('foo: bar2')
   })
+
+  test('variables from .env.two.test file should have been loaded', async () => {
+    const html = await get('/')
+    expect(html).toContain('bar: baz2')
+  })
 })
